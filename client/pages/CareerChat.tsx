@@ -148,10 +148,10 @@ export default function CareerChat() {
                 } animate-slide-up`}
               >
                 <div
-                  className={`max-w-xs lg:max-w-md px-4 py-3 rounded-xl ${
+                  className={`max-w-xs lg:max-w-md px-4 py-3 rounded-xl shadow-sm ${
                     message.sender === "user"
                       ? "bg-primary text-primary-foreground rounded-br-none"
-                      : "bg-secondary text-foreground rounded-bl-none"
+                      : "bg-muted text-foreground rounded-bl-none"
                   }`}
                 >
                   <p className="text-sm">{message.text}</p>

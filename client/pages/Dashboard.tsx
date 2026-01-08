@@ -169,7 +169,7 @@ export default function Dashboard() {
         </div>
 
         {/* Skills in Progress */}
-        <div className="bg-white rounded-xl shadow-sm border border-border p-6 animate-slide-up">
+        <div className="bg-card rounded-xl shadow-card border border-border p-6 animate-slide-up hover:shadow-card-hover transition-shadow">
           <div className="flex items-center justify-between mb-4">
             <h3 className="font-semibold text-foreground">Active Learning</h3>
             <BookOpen className="w-5 h-5 text-blue-500" />

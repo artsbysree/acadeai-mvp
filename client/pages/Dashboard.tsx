@@ -149,7 +149,7 @@ export default function Dashboard() {
       {/* Progress Overview */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         {/* Overall Progress Card */}
-        <div className="bg-white rounded-xl shadow-sm border border-border p-6 animate-slide-up">
+        <div className="bg-card rounded-xl shadow-card border border-border p-6 animate-slide-up hover:shadow-card-hover transition-shadow">
           <div className="flex items-center justify-between mb-4">
             <h3 className="font-semibold text-foreground">Overall Progress</h3>
             <TrendingUp className="w-5 h-5 text-primary" />

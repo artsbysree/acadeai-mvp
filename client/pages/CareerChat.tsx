@@ -185,7 +185,7 @@ export default function CareerChat() {
                   <button
                     key={idx}
                     onClick={() => handleSendMessage(question)}
-                    className="text-left px-3 py-2 text-sm rounded-lg border border-border hover:border-primary hover:bg-blue-50 transition-all text-foreground"
+                    className="text-left px-3 py-2 text-sm rounded-lg border border-border hover:border-primary hover:bg-secondary transition-all text-foreground"
                   >
                     {question}
                   </button>

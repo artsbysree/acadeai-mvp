@@ -137,7 +137,7 @@ export default function CareerChat() {
         </div>
 
         {/* Chat Container */}
-        <div className="bg-white rounded-2xl shadow-sm border border-border overflow-hidden flex flex-col h-[600px]">
+        <div className="bg-card rounded-2xl shadow-card border border-border overflow-hidden flex flex-col h-[600px]">
           {/* Messages Area */}
           <div className="flex-1 overflow-y-auto p-6 space-y-4">
             {messages.map((message) => (

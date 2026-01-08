@@ -305,7 +305,7 @@ export default function Login() {
                 className={`flex-1 px-4 py-2 bg-primary text-primary-foreground rounded-lg font-semibold transition-all ${
                   !isStep3Valid
                     ? "opacity-50 cursor-not-allowed"
-                    : "hover:shadow-lg hover:bg-blue-600"
+                    : "hover:shadow-card-hover active:opacity-95"
                 }`}
               >
                 Get Started

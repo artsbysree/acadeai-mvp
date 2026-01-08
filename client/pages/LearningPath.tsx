@@ -321,7 +321,7 @@ export default function LearningPath() {
         </p>
         <a
           href="/chat"
-          className="inline-block px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-blue-600 transition-colors"
+          className="inline-block px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:shadow-card-hover transition-all active:opacity-95"
         >
           Chat with AI →
         </a>

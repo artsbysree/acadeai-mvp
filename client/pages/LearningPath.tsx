@@ -311,7 +311,7 @@ export default function LearningPath() {
       </div>
 
       {/* CTA Section */}
-      <div className="mt-12 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border border-border p-8 text-center">
+      <div className="mt-12 bg-secondary rounded-xl border border-border p-8 text-center">
         <h3 className="text-2xl font-bold text-foreground mb-3">
           Ready to accelerate your learning?
         </h3>

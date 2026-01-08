@@ -26,7 +26,7 @@ const NotFound = () => {
           </p>
           <a
             href="/dashboard"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-blue-600 transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:shadow-card-hover transition-all active:opacity-95"
           >
             <Home className="w-5 h-5" />
             Back to Dashboard

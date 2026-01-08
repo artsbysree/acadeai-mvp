@@ -293,7 +293,7 @@ export default function Login() {
                   (step === 1 && !isStep1Valid) ||
                   (step === 2 && !isStep2Valid)
                     ? "opacity-50 cursor-not-allowed"
-                    : "hover:shadow-lg hover:bg-blue-600"
+                    : "hover:shadow-card-hover active:opacity-95"
                 }`}
               >
                 Next

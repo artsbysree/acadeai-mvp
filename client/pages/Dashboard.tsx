@@ -181,7 +181,7 @@ export default function Dashboard() {
             {skillRecommendations.slice(0, 3).map((skill) => (
               <span
                 key={skill.id}
-                className="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded-full"
+                className="text-xs bg-secondary text-primary px-2 py-1 rounded-full"
               >
                 {skill.skill}
               </span>

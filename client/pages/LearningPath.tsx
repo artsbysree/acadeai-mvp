@@ -213,7 +213,7 @@ const PathCard = ({
               {step.resources.map((resource, idx) => (
                 <span
                   key={idx}
-                  className="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded-full"
+                  className="text-xs bg-secondary text-primary px-2 py-1 rounded-full"
                 >
                   {resource}
                 </span>

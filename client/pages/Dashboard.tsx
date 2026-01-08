@@ -264,7 +264,7 @@ export default function Dashboard() {
       </div>
 
       {/* Career Guidance */}
-      <div className="bg-white rounded-xl shadow-sm border border-border p-8">
+      <div className="bg-card rounded-xl shadow-card border border-border p-8 hover:shadow-card-hover transition-shadow">
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-2xl font-bold text-foreground">
             Recommended Career Paths

@@ -193,7 +193,7 @@ export default function Dashboard() {
         </div>
 
         {/* Career Match */}
-        <div className="bg-white rounded-xl shadow-sm border border-border p-6 animate-slide-up">
+        <div className="bg-card rounded-xl shadow-card border border-border p-6 animate-slide-up hover:shadow-card-hover transition-shadow">
           <div className="flex items-center justify-between mb-4">
             <h3 className="font-semibold text-foreground">Career Match</h3>
             <Briefcase className="w-5 h-5 text-green-500" />

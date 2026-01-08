@@ -271,10 +271,10 @@ export default function Login() {
             <button
               type="button"
               onClick={handlePrev}
-              className={`flex-1 px-4 py-2 border border-border rounded-lg font-semibold transition-all ${
+              className={`flex-1 px-4 py-2 border border-border rounded-lg font-semibold transition-all text-foreground ${
                 step === 1
                   ? "opacity-50 cursor-not-allowed"
-                  : "hover:bg-secondary text-foreground"
+                  : "hover:bg-secondary hover:border-border"
               }`}
               disabled={step === 1}
             >

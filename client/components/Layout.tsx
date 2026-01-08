@@ -61,7 +61,7 @@ export default function Layout({ children, showNav = true }: LayoutProps) {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2 hover:bg-secondary rounded-md transition-colors"
+              className="md:hidden p-2 hover:bg-secondary rounded-md transition-colors text-foreground"
             >
               {mobileMenuOpen ? (
                 <X className="w-5 h-5" />

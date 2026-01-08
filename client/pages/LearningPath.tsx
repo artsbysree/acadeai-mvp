@@ -163,7 +163,7 @@ const PathCard = ({
     <div
       className={`rounded-lg border p-6 transition-all ${
         canAccess
-          ? "border-border bg-white hover:shadow-md hover:border-primary"
+          ? "border-border bg-card shadow-card hover:shadow-card-hover hover:border-primary"
           : "border-border bg-muted opacity-60 cursor-not-allowed"
       }`}
     >

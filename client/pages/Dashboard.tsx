@@ -226,7 +226,7 @@ export default function Dashboard() {
           {skillRecommendations.slice(0, 6).map((skill) => (
             <div
               key={skill.id}
-              className="bg-white rounded-xl shadow-sm border border-border p-6 hover:shadow-md transition-all duration-200 animate-slide-up"
+              className="bg-card rounded-xl shadow-card border border-border p-6 hover:shadow-card-hover transition-all duration-200 animate-slide-up"
             >
               <div className="flex items-start justify-between mb-4">
                 <div className="text-3xl">{skill.icon}</div>

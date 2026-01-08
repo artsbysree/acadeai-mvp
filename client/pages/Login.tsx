@@ -227,8 +227,8 @@ export default function Login() {
                       onClick={() => toggleInterest(interest.id)}
                       className={`p-3 rounded-lg border-2 transition-all text-left ${
                         formData.interests.includes(interest.id)
-                          ? "border-primary bg-blue-50"
-                          : "border-border hover:border-primary hover:bg-blue-50"
+                          ? "border-primary bg-secondary"
+                          : "border-border hover:border-primary hover:bg-secondary"
                       }`}
                     >
                       <div className="flex items-center gap-2">

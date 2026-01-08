@@ -195,7 +195,7 @@ export default function CareerChat() {
           )}
 
           {/* Input Area */}
-          <div className="border-t border-border bg-white p-4">
+          <div className="border-t border-border bg-card p-4">
             <form
               onSubmit={(e) => {
                 e.preventDefault();

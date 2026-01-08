@@ -300,7 +300,7 @@ export default function Dashboard() {
               <p className="text-sm text-muted-foreground mb-4">
                 <strong>Avg. Salary:</strong> {path.avgSalary}/year
               </p>
-              <button className="w-full px-4 py-2 border border-primary text-primary rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+              <button className="w-full px-4 py-2 border border-primary text-primary rounded-lg font-semibold hover:bg-secondary transition-colors">
                 Learn More
               </button>
             </div>

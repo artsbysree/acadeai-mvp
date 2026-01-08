@@ -80,12 +80,12 @@ export default function Login() {
   const isStep3Valid = formData.interests.length > 0 && formData.careerGoals;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-50 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-background flex items-center justify-center p-4">
       <div className="w-full max-w-lg">
         {/* Header */}
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center shadow-lg">
+            <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center shadow-card">
               <Zap className="w-7 h-7 text-white" />
             </div>
             <h1 className="text-3xl font-bold text-foreground">AcadeAI</h1>
@@ -108,7 +108,7 @@ export default function Login() {
         </div>
 
         {/* Form Card */}
-        <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-lg p-8">
+        <form onSubmit={handleSubmit} className="bg-card rounded-2xl shadow-card border border-border p-8">
           {/* Step 1: Basic Info */}
           {step === 1 && (
             <div className="space-y-6 animate-slide-up">

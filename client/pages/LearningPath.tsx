@@ -263,7 +263,7 @@ export default function LearningPath() {
       </div>
 
       {/* Progress Overview */}
-      <div className="bg-white rounded-xl shadow-sm border border-border p-6 mb-8 animate-slide-up">
+      <div className="bg-card rounded-xl shadow-card border border-border p-6 mb-8 animate-slide-up hover:shadow-card-hover transition-shadow">
         <div className="flex items-center justify-between mb-4">
           <h2 className="font-semibold text-foreground">Overall Progress</h2>
           <span className="text-2xl font-bold text-primary">

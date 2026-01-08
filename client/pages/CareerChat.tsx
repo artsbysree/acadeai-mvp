@@ -209,7 +209,7 @@ export default function CareerChat() {
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="Ask me anything about your career..."
                 disabled={isLoading}
-                className="flex-1 px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all disabled:opacity-50"
+                className="flex-1 px-4 py-2 border border-border rounded-lg bg-white text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all disabled:opacity-50"
               />
               <button
                 type="submit"

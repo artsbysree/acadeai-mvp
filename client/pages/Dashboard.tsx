@@ -255,7 +255,7 @@ export default function Dashboard() {
                   />
                 </div>
               </div>
-              <button className="w-full mt-4 px-4 py-2 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-blue-600 transition-colors text-sm">
+              <button className="w-full mt-4 px-4 py-2 bg-primary text-primary-foreground rounded-lg font-medium hover:shadow-card-hover transition-all text-sm active:opacity-95">
                 Continue Learning
               </button>
             </div>

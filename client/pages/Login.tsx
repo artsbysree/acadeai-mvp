@@ -314,9 +314,9 @@ export default function Login() {
           </div>
 
           <p className="text-center text-sm text-muted-foreground mt-6">
-            Already have an account?{" "}
-            <Link to="#" className="text-primary font-semibold hover:underline">
-              Sign in
+            Changed your mind?{" "}
+            <Link to="/" className="text-primary font-semibold hover:underline">
+              Go back
             </Link>
           </p>
         </form>

@@ -12,6 +12,9 @@ import Dashboard from "./pages/Dashboard";
 import CareerChat from "./pages/CareerChat";
 import LearningPath from "./pages/LearningPath";
 import Internships from "./pages/Internships";
+import Tests from "./pages/Tests";
+import TimeTracker from "./pages/TimeTracker";
+import Checklist from "./pages/Checklist";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +32,9 @@ const App = () => (
           <Route path="/chat" element={<CareerChat />} />
           <Route path="/learning" element={<LearningPath />} />
           <Route path="/internships" element={<Internships />} />
+          <Route path="/tests" element={<Tests />} />
+          <Route path="/tracker" element={<TimeTracker />} />
+          <Route path="/checklist" element={<Checklist />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -212,6 +212,19 @@ export default function Tests() {
                   <p className="text-xs text-muted-foreground">Time</p>
                   <p className="text-lg font-semibold text-foreground">{result.time} min</p>
                 </div>
+                <button
+                  onClick={() =>
+                    shareToLinkedIn(
+                      `🎉 Test Achievement Unlocked!`,
+                      `I just completed "${result.testTitle}" with a score of ${result.score}/${result.maxScore} on AcadeAI! 📚 Excited to continue my learning journey towards my career goals. #StudentLife #LearningJourney`
+                    )
+                  }
+                  className="flex items-center gap-2 px-4 py-2 rounded-lg text-primary hover:bg-primary hover:text-primary-foreground transition-colors border border-primary font-semibold text-sm"
+                  title="Share on LinkedIn"
+                >
+                  <Share2 className="w-4 h-4" />
+                  Share
+                </button>
                 <div className="w-16 h-16 bg-success rounded-full flex items-center justify-center">
                   <CheckCircle2 className="w-8 h-8 text-success-foreground" />
                 </div>

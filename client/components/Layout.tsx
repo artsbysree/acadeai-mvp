@@ -16,6 +16,7 @@ export default function Layout({ children, showNav = true }: LayoutProps) {
     { label: "Dashboard", path: "/dashboard" },
     { label: "Career Chat", path: "/chat" },
     { label: "Learning Path", path: "/learning" },
+    { label: "Internships", path: "/internships" },
   ];
 
   const isActive = (path: string) => location.pathname === path;

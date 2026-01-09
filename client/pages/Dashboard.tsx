@@ -7,7 +7,9 @@ import {
   ArrowRight,
   Star,
   CheckCircle2,
+  Share2,
 } from "lucide-react";
+import { shareToLinkedIn } from "@/lib/utils";
 
 interface StudentProfile {
   name: string;

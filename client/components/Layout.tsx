@@ -45,7 +45,7 @@ export default function Layout({ children, showNav = true }: LayoutProps) {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center gap-1">
+            <nav className="hidden md:flex items-center gap-1 overflow-x-auto">
               {navItems.map((item) => (
                 <Link
                   key={item.path}

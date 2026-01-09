@@ -225,13 +225,30 @@ const PathCard = ({
       </div>
 
       {canAccess && (
-        <button className="w-full mt-4 px-4 py-2 bg-primary text-primary-foreground rounded-lg font-medium hover:shadow-card-hover transition-all text-sm active:opacity-95">
-          {step.status === "completed"
-            ? "Review"
-            : step.status === "in-progress"
-              ? "Continue"
-              : "Start"}
-        </button>
+        <div className="grid grid-cols-2 gap-3 mt-4">
+          <button className="px-4 py-2 bg-primary text-primary-foreground rounded-lg font-medium hover:shadow-card-hover transition-all text-sm active:opacity-95">
+            {step.status === "completed"
+              ? "Review"
+              : step.status === "in-progress"
+                ? "Continue"
+                : "Start"}
+          </button>
+          {step.status === "completed" && (
+            <button
+              onClick={() =>
+                shareToLinkedIn(
+                  `🏆 Learning Milestone Completed!`,
+                  `I successfully completed "${step.title}" as part of my career development journey on AcadeAI! 🎓 This course helped me master ${step.resources[0]} and more. Excited to continue leveling up my skills! 💪 #LearningPath #SkillBuilding`
+                )
+              }
+              className="px-4 py-2 bg-green-50 text-green-700 rounded-lg font-medium hover:bg-green-100 transition-all text-sm border border-green-300 flex items-center justify-center gap-2"
+              title="Share on LinkedIn"
+            >
+              <Share2 className="w-4 h-4" />
+              Share
+            </button>
+          )}
+        </div>
       )}
     </div>
   );

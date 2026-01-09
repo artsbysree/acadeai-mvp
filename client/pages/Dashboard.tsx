@@ -270,9 +270,26 @@ export default function Dashboard() {
                   />
                 </div>
               </div>
-              <button className="w-full mt-4 px-4 py-2 bg-primary text-primary-foreground rounded-lg font-medium hover:shadow-card-hover transition-all text-sm active:opacity-95">
-                Continue Learning
-              </button>
+              <div className="grid grid-cols-2 gap-2 mt-4">
+                <button className="px-4 py-2 bg-primary text-primary-foreground rounded-lg font-medium hover:shadow-card-hover transition-all text-sm active:opacity-95">
+                  Continue Learning
+                </button>
+                {skill.progress >= 50 && (
+                  <button
+                    onClick={() =>
+                      shareToLinkedIn(
+                        `📚 Skill Advancement Achievement!`,
+                        `I'm making great progress on "${skill.skill}" (${skill.progress}% complete) as part of my career development! 🎯 Building my expertise in ${skill.category} with AcadeAI. #SkillsFirst #TechCareer`
+                      )
+                    }
+                    className="px-4 py-2 bg-blue-50 text-blue-700 rounded-lg font-medium hover:bg-blue-100 transition-all text-sm border border-blue-300 flex items-center justify-center gap-2"
+                    title="Share on LinkedIn"
+                  >
+                    <Share2 className="w-3 h-3" />
+                    Share
+                  </button>
+                )}
+              </div>
             </div>
           ))}
         </div>

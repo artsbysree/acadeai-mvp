@@ -141,9 +141,22 @@ export default function Dashboard() {
         <h1 className="text-4xl font-bold text-foreground mb-2">
           Welcome back, {profile.name}! 👋
         </h1>
-        <p className="text-lg text-muted-foreground">
+        <p className="text-lg text-muted-foreground mb-6">
           You're on track for an amazing career. Let's build your future together.
         </p>
+
+        {/* Quick Access Links */}
+        <div className="flex flex-wrap gap-3">
+          <a href="/tests" className="inline-flex items-center gap-2 px-4 py-2 bg-secondary text-primary rounded-lg font-medium hover:border-primary border border-border transition-colors text-sm">
+            📝 Take a Test
+          </a>
+          <a href="/tracker" className="inline-flex items-center gap-2 px-4 py-2 bg-secondary text-primary rounded-lg font-medium hover:border-primary border border-border transition-colors text-sm">
+            ⏱️ Time Tracker
+          </a>
+          <a href="/checklist" className="inline-flex items-center gap-2 px-4 py-2 bg-secondary text-primary rounded-lg font-medium hover:border-primary border border-border transition-colors text-sm">
+            ✓ Checklist
+          </a>
+        </div>
       </div>
 
       {/* Progress Overview */}

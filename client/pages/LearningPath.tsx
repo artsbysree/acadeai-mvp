@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
-import { CheckCircle2, Circle, Lock, Zap, Trophy } from "lucide-react";
+import { CheckCircle2, Circle, Lock, Zap, Trophy, Share2 } from "lucide-react";
+import { shareToLinkedIn } from "@/lib/utils";
 
 interface LearningStep {
   id: string;

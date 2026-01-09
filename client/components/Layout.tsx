@@ -16,6 +16,9 @@ export default function Layout({ children, showNav = true }: LayoutProps) {
     { label: "Dashboard", path: "/dashboard" },
     { label: "Career Chat", path: "/chat" },
     { label: "Learning Path", path: "/learning" },
+    { label: "Tests", path: "/tests" },
+    { label: "Tracker", path: "/tracker" },
+    { label: "Checklist", path: "/checklist" },
     { label: "Internships", path: "/internships" },
   ];
 

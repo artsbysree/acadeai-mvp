@@ -332,9 +332,24 @@ export default function Dashboard() {
               <p className="text-sm text-muted-foreground mb-4">
                 <strong>Avg. Salary:</strong> {path.avgSalary}/year
               </p>
-              <button className="w-full px-4 py-2 border border-primary text-primary rounded-lg font-semibold hover:bg-secondary transition-colors">
-                Learn More
-              </button>
+              <div className="grid grid-cols-2 gap-3">
+                <button className="px-4 py-2 border border-primary text-primary rounded-lg font-semibold hover:bg-secondary transition-colors">
+                  Learn More
+                </button>
+                <button
+                  onClick={() =>
+                    shareToLinkedIn(
+                      `🚀 Career Path Goal Set!`,
+                      `I'm pursuing a career as a "${path.title}" 🎯 With ${path.match}% alignment to my skills and goals, I'm working towards mastering the required competencies on AcadeAI. Excited about the opportunities ahead! 💼 Top companies: ${path.companies}`
+                    )
+                  }
+                  className="px-4 py-2 bg-green-50 text-green-700 rounded-lg font-semibold hover:bg-green-100 transition-colors border border-green-300 flex items-center justify-center gap-2"
+                  title="Share on LinkedIn"
+                >
+                  <Share2 className="w-4 h-4" />
+                  Share
+                </button>
+              </div>
             </div>
           ))}
         </div>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
-import { BookOpen, CheckCircle2, Clock, AlertCircle, TrendingUp, Award, ArrowRight } from "lucide-react";
+import { BookOpen, CheckCircle2, Clock, AlertCircle, TrendingUp, Award, ArrowRight, Share2 } from "lucide-react";
+import { shareToLinkedIn } from "@/lib/utils";
 
 interface Test {
   id: number;

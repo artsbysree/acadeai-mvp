@@ -329,18 +329,35 @@ export default function Tests() {
               <p className="text-xs text-muted-foreground mb-4">Completed: {test.completedDate}</p>
             )}
 
-            {/* CTA Button */}
-            <button
-              onClick={() => setSelectedTest(test)}
-              className={`w-full py-2 rounded-lg font-semibold transition-all flex items-center justify-center gap-2 ${
-                test.status === "completed"
-                  ? "bg-secondary text-primary hover:border-primary border border-border"
-                  : "bg-primary text-primary-foreground hover:shadow-card-hover"
-              }`}
-            >
-              {test.status === "completed" ? "Review Test" : test.status === "in-progress" ? "Continue Test" : "Start Test"}
-              <ArrowRight className="w-4 h-4" />
-            </button>
+            {/* CTA Buttons */}
+            <div className="grid grid-cols-2 gap-3">
+              <button
+                onClick={() => setSelectedTest(test)}
+                className={`py-2 rounded-lg font-semibold transition-all flex items-center justify-center gap-2 ${
+                  test.status === "completed"
+                    ? "bg-secondary text-primary hover:border-primary border border-border"
+                    : "bg-primary text-primary-foreground hover:shadow-card-hover"
+                }`}
+              >
+                {test.status === "completed" ? "Review Test" : test.status === "in-progress" ? "Continue Test" : "Start Test"}
+                <ArrowRight className="w-4 h-4" />
+              </button>
+              {test.status === "completed" && (
+                <button
+                  onClick={() =>
+                    shareToLinkedIn(
+                      `✨ Skill Mastery Milestone!`,
+                      `I just completed "${test.title}" in the "${test.course}" course with a score of ${test.score}%! 🚀 I'm using AcadeAI to build my career skills. Join me on this learning journey! 📖 #SkillDevelopment #CareerGrowth`
+                    )
+                  }
+                  className="py-2 rounded-lg font-semibold transition-all flex items-center justify-center gap-2 bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-300"
+                  title="Share on LinkedIn"
+                >
+                  <Share2 className="w-4 h-4" />
+                  Share
+                </button>
+              )}
+            </div>
           </div>
         ))}
       </div>
